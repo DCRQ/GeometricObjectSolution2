@@ -148,7 +148,7 @@ namespace GeometricObjectSolution
 					default:
 						break;
 				}
-			}
+			} 
 			#endregion
 
 			//#region Essentials
