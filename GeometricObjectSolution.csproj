@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0D67149-91C9-4096-BEC0-36462273391B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GeometricObjectSolution</RootNamespace>
+    <AssemblyName>GeometricObjectSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>CS8600, CS8625</WarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Specialized.4.3.0\lib\net46\System.Collections.Specialized.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 15\Serialisierung.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\BeispielKlasse.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Datenkapselung\Datenkapselung.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Interfaces\IExample.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Interfaces\IExample_2.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Interfaces\InterfaceKlasse.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 10-11\Debugging und Exceptions\Debugging.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassendefinition\Klassendefinition.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Basisklasse.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Klassenvererbung.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Subklasse.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Klassenvererbung\Subklasse_2.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 10-11\Debugging und Exceptions\Exceptions.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Auflistungsklassen.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Besondere Collections\Queues.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Besondere Collections\Stacks.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Key-Value-Pair-Collections\HybridCollection.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\List typen\BlockingCollection.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Key-Value-Pair-Collections\Dictionary.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Besondere Collections\HashSet.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\List typen\LinkedList.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\List typen\List.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\Key-Value-Pair-Collections\ListDictionary.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 12\Auflistungsklassen\List typen\ObservableCollection.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 13\GenerischeKlasse.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\Attribute.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\Erweiterungsmethoden.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\NullReferenzTypen.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\PatternMatching.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\Spezialmethoden.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\Tupel.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\VarTypen.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\ErweiterungsmethodenProvider.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\SpezialmethodenProvider.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 14\WeitereSprachFeatures.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Async_Await.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Multithreading.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Parallelism.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Synchronisierungsmöglichkeiten bei Konkurrierendem zugriff\Mutex.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Synchronisierungsmöglichkeiten bei Konkurrierendem zugriff\Semaphore.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Synchronisierungsmöglichkeiten bei Konkurrierendem zugriff\SpinLock.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Synchronisierungsmöglichkeiten bei Konkurrierendem zugriff\SpinWait.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Synchronisierungsmöglichkeiten bei Konkurrierendem zugriff\Monitor.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Tasks.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\ThreadPool.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\Threads.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 16\TPL.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\PerformClass.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 5-7\Delegaten,Ereignisse und Lambda-Ausdruecke\Delegates.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 5-7\Delegaten,Ereignisse und Lambda-Ausdruecke\Events.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 5-7\Delegaten,Ereignisse und Lambda-Ausdruecke\Lambda-Ausdrücke.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Polymorphie\Basisklasse_PolymorphieBeispiel.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Polymorphie\PolymorphieBeispiel.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Polymorphie\Subklasse-2_PolymorphieBeispiel.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 1-4\Polymorphie\Subklasse_PolymorphieBeispiel.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 8-9\Strukturen und Enumerationen\Enumerationen.cs" />
+    <Compile Include="ProgrammierToolkit_Notizen\Chapter 8-9\Strukturen und Enumerationen\Strukturen.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
