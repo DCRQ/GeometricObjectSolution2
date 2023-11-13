@@ -60,7 +60,7 @@ namespace GeometricObjectSolution.ProgrammierToolkit_Notizen.Chapter_14
 					int a when a > -1 => $"Das Objekt ist ein Integer. Wert: {a}",
 					string a when a.Length < 100 => $"Das Objekt ist ein String. Wert: {a}",
 					bool a => $"Das Objekt ist ein Bool. Wert: {a}",
-					_ => "Der Typ des Objektes ist unbekannt",
+					_ => "Der Typ des Objektes ist unbekannt.",
 				};
 				Console.WriteLine(objectText);
 			}
@@ -75,4 +75,5 @@ namespace GeometricObjectSolution.ProgrammierToolkit_Notizen.Chapter_14
 			_ => "Der Typ des Objektes ist unbekannt",
 		};
 	}
+
 }
